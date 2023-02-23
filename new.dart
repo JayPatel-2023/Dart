@@ -75,4 +75,19 @@ void main() {
   print("sum with toStringAsPrecision(1) = ${(i + j).toStringAsPrecision(1)}");
   print("sum with truncate() = ${(i + j).truncate()}");
   print("sum with truncateToDouble() = ${(i + j).truncateToDouble()}");
+
+  //unary operators
+  double k = 5.67;
+  print("k : $k");
+  print("k++ : ${k++}");
+  print("k : $k");
+  print("k-- : ${k--}");
+  print("k : $k");
+  print("++k : ${++k}");
+  print("k : $k");
+  print("--k : ${--k}");
+  print("k : $k");
+
+  
+
 }
