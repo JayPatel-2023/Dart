@@ -119,4 +119,14 @@ void main() {
 
   //ternary operators
   print("?: => ${N == true ? true : false}");
+
+  //type test operators
+  print("chech var type is int : ${a is int}");
+  print("chech var type is double : ${b is double}");
+  print("chech var type is string : ${c is String}");
+  print("chech var type is bool : ${d is bool}");
+  print("chech var type is var : ${e is int}");
+
+  //assignment operators
+  
 }
