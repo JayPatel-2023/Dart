@@ -116,5 +116,7 @@ void main() {
   print("true || false : ${N || O}");
   print("false || true : ${O || N}");
   print("false || false : ${O || O}");
-  
+
+  //ternary operators
+  print("?: => ${N == true ? true : false}");
 }
