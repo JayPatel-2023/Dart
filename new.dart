@@ -21,9 +21,9 @@ void main() {
   double b = 10.5;
   print("b type = ${b.runtimeType} and value is $b");
   // string declare with
-  // '' => for small words
-  // "" => for single line statement
-  // """""" => for multiline statement
+  // '' : for small words
+  // "" : for single line statement
+  // """""" : for multiline statement
   String c = 'abcdefghij';
   print("c type = ${c.runtimeType} and value is $c.");
   bool d = true;
@@ -42,20 +42,24 @@ void main() {
   // arithmetic operators
   var i = 7;
   var j = 13.5;
-  print("sum = ${(i + j)}");
-  print("sub = ${(i - j)}");
-  print("mul = ${(i * j)}");
-  print("div = ${(i / j)}");
-  print("reminder = ${(i % j)}");
-  print("div then toInt = ${(i ~/ j)}");
+  print("sum + : ${(i + j)}");
+  print("sub - : ${(i - j)}");
+  print("mul * : ${(i * j)}");
+  print("div / : ${(i / j)}");
+  print("reminder  % : ${(i % j)}");
+  print("div then toInt ~/ : ${(i ~/ j)}");
   //operations on arithmatic opertors result
   print("sum with sign = ${(i + j).sign}");
   print("sum with hashCode = ${(i + j).hashCode}");
+  print("sum with hashCode.bitLength = ${(i + j).hashCode.bitLength}");
+  print("sum with hashCode.isEven = ${(i + j).hashCode.isEven}");
+  print("sum with hashCode.isOdd = ${(i + j).hashCode.isOdd}");
   print("sum with isFinite = ${(i + j).isFinite}");
   print("sum with isInfinite = ${(i + j).isInfinite}");
   print("sum with isNaN = ${(i + j).isNaN}");
   print("sum with isNegative = ${(i + j).isNegative}");
   print("sum with runtimeType = ${(i + j).runtimeType}");
+  print("next all the operations is accepts the other methos like hashcode which is given above!!!");
   print("sum with abs() = ${(i + j).abs()}");
   print("sum with ceil() = ${(i + j).ceil()}");
   print("sum with ceilToDouble() = ${(i + j).ceilToDouble()}");
@@ -77,6 +81,7 @@ void main() {
   print("sum with truncateToDouble() = ${(i + j).truncateToDouble()}");
 
   //unary operators
+  //all operations which are apply on arithmetic operators is also apply on unary operators
   double k = 5.67;
   print("k : $k");
   print("k++ : ${k++}");
@@ -88,6 +93,16 @@ void main() {
   print("--k : ${--k}");
   print("k : $k");
 
-  
+  //relational operators
+  double l = 5.67;
+  double m = 7;
+  print("equal == : ${l==m}");
+  print("not equal != : ${l!=m}");
+  //all operations which are apply on arithmetic operators is also apply on unary operators
+  print("greater than > : ${l > m}");
+  print("less than < : ${(l<m)}");
+  print("greater than or equal >= : ${l >= m}");
+  print("less than or equal <= : ${l <= m}");
 
+  
 }
