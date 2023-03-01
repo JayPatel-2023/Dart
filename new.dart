@@ -37,14 +37,6 @@ void main() {
   print("p*=5 : ${(p *= 5)}");
   print("p/=5 : ${(p /= 5)}");
 
-  //conditional expression
-  var name = 'jay';
-  var user = name ?? "guest";
-  print(user);
-  var name1 = null;
-  user = name1 ?? 'guest';
-  print(user);
-  //if the varriable has null than it's automatically take guest otherwise var value
-
+  
   
 }
