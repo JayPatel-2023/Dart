@@ -24,9 +24,7 @@ void main() {
   
  
 
-  //ternary operators
-  bool N = true;
-  print("?: => ${N == true ? true : false}");
+  
 
   //type test operators
   
