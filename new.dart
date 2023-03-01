@@ -16,27 +16,6 @@ void main() {
   ///variable declaration rules
   //built in data types and check runtime type
   //int double string bool var dynamic list set map
-  int a = 10;
-  print("a type = ${a.runtimeType} and value is $a");
-  double b = 10.5;
-  print("b type = ${b.runtimeType} and value is $b");
-  // string declare with
-  // '' : for small words
-  // "" : for single line statement
-  // """""" : for multiline statement
-  String c = 'abcdefghij';
-  print("c type = ${c.runtimeType} and value is $c.");
-  bool d = true;
-  print("d type = ${d.runtimeType} and value is $d.");
-  print("all var variable declartion !!!");
-  var e = 100;
-  print("e type = ${e.runtimeType} and value is $e.");
-  var f = 100.5;
-  print("f type = ${f.runtimeType} and value is $f.");
-  var g = "jay";
-  print("g type = ${g.runtimeType} and value is $g.");
-  var h = true;
-  print("h type = ${h.runtimeType} and value is $h.");
 
   /// operators
   // arithmetic operators
@@ -121,6 +100,11 @@ void main() {
   print("?: => ${N == true ? true : false}");
 
   //type test operators
+  int a = 10;
+  double b = 10.5;
+  String c = 'abcdefghij';
+  bool d = true;
+  var e = 100;
   print("chech var type is int : ${a is int}");
   print("chech var type is double : ${b is double}");
   print("chech var type is string : ${c is String}");
