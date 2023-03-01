@@ -22,19 +22,10 @@ void main() {
   //unary operators
   
   
-  //logical operators
-  bool N = true;
-  bool O = false;
-  print("true && true : ${N && N}");
-  print("true && false : ${N && O}");
-  print("false && true : ${O && N}");
-  print("false && false : ${O && O}");
-  print("true || true : ${N || N}");
-  print("true || false : ${N || O}");
-  print("false || true : ${O || N}");
-  print("false || false : ${O || O}");
+ 
 
   //ternary operators
+  bool N = true;
   print("?: => ${N == true ? true : false}");
 
   //type test operators
