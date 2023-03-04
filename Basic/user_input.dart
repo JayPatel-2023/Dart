@@ -15,5 +15,5 @@ void main() {
   double b = double.parse(stdin.readLineSync()!);
   print("Entered number is $b.");
 
- 
+  stdout.write("stdout.write() is the alterate of print().");
 }

@@ -21,7 +21,7 @@ void main() {
   print("sum with runtimeType = ${(i + j).runtimeType}");
   print(
       "next all the operations is accepts the other methos like hashcode which is given above!!!");
-  print("sum with abs() = ${(i + j).abs()}");
+  print("sum with abs() = ${(-5).abs()}");
   print("sum with ceil() = ${(i + j).ceil()}");
   print("sum with ceilToDouble() = ${(i + j).ceilToDouble()}");
   print("sum with clamp(10,20) = ${(i + j).clamp(10, 20)}");
