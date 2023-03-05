@@ -12,4 +12,7 @@ void main() {
   print("true || false : ${N || O}");
   print("false || true : ${O || N}");
   print("false || false : ${O || O}");
+
+  //also do this for all 
+  print("Not(true && true) : ${!(N && N)}");
 }
