@@ -22,6 +22,7 @@ void main() {
   print("z.sign : ${z.sign}");
   print("n.sign : ${n.sign}");
 
+  print("\n\n");
   print("-----Methods of int class-----");
   print("n.abs() : ${n.abs()}");
   print("(10.57).ceil() : ${(10.57).ceil()}");
@@ -61,12 +62,14 @@ void main() {
   print("(10.58).truncate() : ${(10.58).truncate()}");
   print("(10.58).truncateToDouble() : ${(10.58).truncateToDouble()}");
 
+  print("\n\n");
   print("-----Applicable Operators in int class-----");
   print("5 % 3 : ${5 % 3}"); // 2
   print("-5 % 3 : ${-5 % 3}"); // 1
   print("5 % -3 : ${5 % -3}"); // 2
   print("-5 % -3 : ${-5 % -3}"); // 1
-  print("(2 & 1).toRadixString(2) : ${(2 & 1).toRadixString(2)}"); // 0010 & 0001 -> 0000
+  print(
+      "(2 & 1).toRadixString(2) : ${(2 & 1).toRadixString(2)}"); // 0010 & 0001 -> 0000
   print((3 & 1).toRadixString(2)); // 0011 & 0001 -> 0001
   print((10 & 2).toRadixString(2)); // 1010 & 0010 -> 0010
   print("5 * 3 : ${5 * 3}");
@@ -89,9 +92,12 @@ void main() {
   print("-5 < 3 : ${-5 < 3}");
   print("5 < -3 : ${5 < -3}");
   print("-5 < -3 : ${-5 < -3}");
-  print("(3 << 1).toRadixString(2) : ${(3 << 1).toRadixString(2)}"); // 0011 -> 0110
-  print("(9 << 2).toRadixString(2) : ${(9 << 2).toRadixString(2)}"); // 1001 -> 100100
-  print("(10 << 3).toRadixString(2) : ${(10 << 3).toRadixString(2)}"); // 1010 -> 1010000
+  print(
+      "(3 << 1).toRadixString(2) : ${(3 << 1).toRadixString(2)}"); // 0011 -> 0110
+  print(
+      "(9 << 2).toRadixString(2) : ${(9 << 2).toRadixString(2)}"); // 1001 -> 100100
+  print(
+      "(10 << 3).toRadixString(2) : ${(10 << 3).toRadixString(2)}"); // 1010 -> 1010000
   print("5 <= 3 : ${5 <= 3}");
   print("-5 <= 3 : ${-5 <= 3}");
   print("5 <= -3 : ${5 <= -3}");
@@ -105,22 +111,36 @@ void main() {
   print("-5 >= 3 : ${-5 >= 3}");
   print("5 >= -3 : ${5 >= -3}");
   print("-5 >= -3 : ${-5 >= -3}");
-  print("(3 >> 1).toRadixString(2) : ${(3 >> 1).toRadixString(2)}"); // 0011 -> 0001
-  print("(9 >> 2).toRadixString(2) : ${(9 >> 2).toRadixString(2)}"); // 1001 -> 0010
-  print("(10 >> 3).toRadixString(2) : ${(10 >> 3).toRadixString(2)}"); // 1010 -> 0001
-  print("(6 >> 2).toRadixString : ${(6 >> 2).toRadixString}"); // 111...1010 -> 111...1110 == -2
-  print("(85 >> 3).toRadixString : ${(85 >> 3).toRadixString}"); // 111...10101011 -> 111...11110101 == -11
-  print("(3 >>> 1).toRadixString(2) : ${(3 >>> 1).toRadixString(2)}"); // 0011 -> 0001
-  print("(9 >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 1001 -> 0010
-  print("(9) >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 111...1011 -> 001...1110 (> 0)
-  print("(2 ^ 1).toRadixString(2) : ${(2 ^ 1).toRadixString(2)}"); //  0010 ^ 0001 -> 0011
-  print("(3 ^ 1).toRadixString(2) : ${(3 ^ 1).toRadixString(2)}"); //  0011 ^ 0001 -> 0010
-  print("(10 ^ 2).toRadixString(2) : ${(10 ^ 2).toRadixString(2)}"); //  1010 ^ 0010 -> 1000
+  print(
+      "(3 >> 1).toRadixString(2) : ${(3 >> 1).toRadixString(2)}"); // 0011 -> 0001
+  print(
+      "(9 >> 2).toRadixString(2) : ${(9 >> 2).toRadixString(2)}"); // 1001 -> 0010
+  print(
+      "(10 >> 3).toRadixString(2) : ${(10 >> 3).toRadixString(2)}"); // 1010 -> 0001
+  print(
+      "(6 >> 2).toRadixString : ${(6 >> 2).toRadixString}"); // 111...1010 -> 111...1110 == -2
+  print(
+      "(85 >> 3).toRadixString : ${(85 >> 3).toRadixString}"); // 111...10101011 -> 111...11110101 == -11
+  print(
+      "(3 >>> 1).toRadixString(2) : ${(3 >>> 1).toRadixString(2)}"); // 0011 -> 0001
+  print(
+      "(9 >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 1001 -> 0010
+  print(
+      "(9) >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 111...1011 -> 001...1110 (> 0)
+  print(
+      "(2 ^ 1).toRadixString(2) : ${(2 ^ 1).toRadixString(2)}"); //  0010 ^ 0001 -> 0011
+  print(
+      "(3 ^ 1).toRadixString(2) : ${(3 ^ 1).toRadixString(2)}"); //  0011 ^ 0001 -> 0010
+  print(
+      "(10 ^ 2).toRadixString(2) : ${(10 ^ 2).toRadixString(2)}"); //  1010 ^ 0010 -> 1000
   print("-(p) : ${-(p)}");
   print("-(z) : ${-(z)}");
-  print("(2 | 1).toRadixString(2) : ${(2 | 1).toRadixString(2)}"); // 0010 | 0001 -> 0011
-  print("(3 | 1).toRadixString(2) : ${(3 | 1).toRadixString(2)}"); // 0011 | 0001 -> 0011
-  print("(10 | 2).toRadixString(2) : ${(10 | 2).toRadixString(2)}"); // 1010 | 0010 -> 1010
+  print(
+      "(2 | 1).toRadixString(2) : ${(2 | 1).toRadixString(2)}"); // 0010 | 0001 -> 0011
+  print(
+      "(3 | 1).toRadixString(2) : ${(3 | 1).toRadixString(2)}"); // 0011 | 0001 -> 0011
+  print(
+      "(10 | 2).toRadixString(2) : ${(10 | 2).toRadixString(2)}"); // 1010 | 0010 -> 1010
   print("~(p) : ${~(p)}");
   print("~(z) : ${~(z)}");
   print("~(n) : ${~(n)}");
@@ -129,6 +149,7 @@ void main() {
   print("5 ~/ -3 : ${5 ~/ -3}");
   print("-5 ~/ -3 : ${-5 ~/ -3}");
 
+  print("\n\n");
   print("-----Static Methods in int class-----");
   print("parse(String source, {int? radix, int onError(String source)?})");
   print("var value = int.tryParse(text); ");
@@ -154,4 +175,3 @@ void main() {
   print(int.tryParse('y1', radix: 36)); // 1225 == 34 * 36 + 1
   print(int.tryParse('z1', radix: 36)); // 1261 == 35 * 36 + 1
 }
-
