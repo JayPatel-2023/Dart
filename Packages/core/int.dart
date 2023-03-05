@@ -112,10 +112,10 @@ void main() {
   print("(85 >> 3).toRadixString : ${(85 >> 3).toRadixString}"); // 111...10101011 -> 111...11110101 == -11
   print("(3 >>> 1).toRadixString(2) : ${(3 >>> 1).toRadixString(2)}"); // 0011 -> 0001
   print("(9 >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 1001 -> 0010
-  print("(-9) >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 111...1011 -> 001...1110 (> 0)
-  print("(2 ^ 1).toRadixString(2) : ${}"); //  0010 ^ 0001 -> 0011
-  print("(3 ^ 1).toRadixString(2) : ${}"); //  0011 ^ 0001 -> 0010
-  print("(10 ^ 2).toRadixString(2) : ${}"); //  1010 ^ 0010 -> 1000
+  print("(9) >>> 2).toRadixString(2) : ${(9 >>> 2).toRadixString(2)}"); // 111...1011 -> 001...1110 (> 0)
+  print("(2 ^ 1).toRadixString(2) : ${(2 ^ 1).toRadixString(2)}"); //  0010 ^ 0001 -> 0011
+  print("(3 ^ 1).toRadixString(2) : ${(3 ^ 1).toRadixString(2)}"); //  0011 ^ 0001 -> 0010
+  print("(10 ^ 2).toRadixString(2) : ${(10 ^ 2).toRadixString(2)}"); //  1010 ^ 0010 -> 1000
   print("-(p) : ${-(p)}");
   print("-(z) : ${-(z)}");
   print("(2 | 1).toRadixString(2) : ${(2 | 1).toRadixString(2)}"); // 0010 | 0001 -> 0011
@@ -154,5 +154,4 @@ void main() {
   print(int.tryParse('y1', radix: 36)); // 1225 == 34 * 36 + 1
   print(int.tryParse('z1', radix: 36)); // 1261 == 35 * 36 + 1
 }
-
 
