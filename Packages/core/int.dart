@@ -22,7 +22,7 @@ void main() {
   print("z.sign : ${z.sign}");
   print("n.sign : ${n.sign}");
 
-  print("\n\n");
+  print("\n\n p = 10 n = -5 z = 0");
   print("-----Methods of int class-----");
   print("n.abs() : ${n.abs()}");
   print("(10.57).ceil() : ${(10.57).ceil()}");
@@ -62,7 +62,7 @@ void main() {
   print("(10.58).truncate() : ${(10.58).truncate()}");
   print("(10.58).truncateToDouble() : ${(10.58).truncateToDouble()}");
 
-  print("\n\n");
+  print("\n\n p = 10 n = -5 z = 0");
   print("-----Applicable Operators in int class-----");
   print("5 % 3 : ${5 % 3}"); // 2
   print("-5 % 3 : ${-5 % 3}"); // 1
@@ -149,7 +149,7 @@ void main() {
   print("5 ~/ -3 : ${5 ~/ -3}");
   print("-5 ~/ -3 : ${-5 ~/ -3}");
 
-  print("\n\n");
+  print("\n\n p = 10 n = -5 z = 0");
   print("-----Static Methods in int class-----");
   print("parse(String source, {int? radix, int onError(String source)?})");
   print("var value = int.tryParse(text); ");
