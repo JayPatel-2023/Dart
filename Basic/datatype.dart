@@ -1,3 +1,11 @@
+/*
+most preferable place and also work with other files
+and no need to declare same symbol in every file just import this file 
+Ex - this 's' symbol used in type_test.dart file
+*/
+Symbol s = new Symbol('abc'); 
+
+
 void main() {
   ///Built in datatypes
 
@@ -168,9 +176,14 @@ void main() {
   var h = true;
   print("h type = ${h.runtimeType} and value is $h. \n");
 
+  ///8.Symbol datatype
+  Symbol pi = new Symbol("3.14");
+  print("Symbol inside main : $pi");
+  print("Symbol outside main : $s\n"); //declare at starting of the file
+  
   ///2.1Runes - to find unicode vales of string
   print("for 'A' : ${'A'.runes}");
-  print("for 'a' : ${'a'.runes}");
+  print("for 'a' : ${'a'.runes}\n");
 
   ///Dynamic datatype
   //dynamic datatype
