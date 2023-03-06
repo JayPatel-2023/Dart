@@ -77,11 +77,34 @@ void main() {
   //list without datatype
   List anyValue = [1, 2.57, 'jay', true];
   print("List without specific datatype : $anyValue");
-  for (int ip = 0; ip <= anyValue.length; ip++) {
-    print("anyValue [$ip] : ${anyValue[ip]} \n");
-  }
-  
- 
+  print("anyValue [2] : ${anyValue[2]} \n");
+
+
+  ///sets
+  //int set
+  Set<int> iSet = {1, 2, 5, 3, 6, 4};
+  print("int set : $iSet");
+  print("iSet.elementAt(0) : ${iSet.elementAt(0)}");
+
+  //double set
+  Set<double> dSet = {1.57, 2.69, 3.67};
+  print("double set : ${dSet}");
+  print("dSet.first : ${dSet.first}");
+
+  //String set
+  Set<String> sSet = {'jay', 'miraj', 'rahul'};
+  print("String set : $sSet");
+  print("sSet.first : ${sSet.first}");
+
+  //bool set - removes the same value automatically
+  Set<bool> bSet = {true, false, true, false, false}; 
+  print("Boolean set : $bSet");
+  print("bSet.first : ${bSet.first}");
+
+  //set without datatype
+  Set anyType = {1, 2.57, 'jay', true};
+  print("Set without specific datatype : $anyType");
+  print("anyType [2] : ${anyType.elementAt(2)} \n");
 
   var e = 100;
   print("e type = ${e.runtimeType} and value is $e.");
