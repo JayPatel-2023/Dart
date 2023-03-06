@@ -3,8 +3,7 @@ most preferable place and also work with other files
 and no need to declare same symbol in every file just import this file 
 Ex - this 's' symbol used in type_test.dart file
 */
-Symbol s = new Symbol('abc'); 
-
+Symbol s = new Symbol('abc');
 
 void main() {
   ///Built in datatypes
@@ -180,7 +179,29 @@ void main() {
   Symbol pi = new Symbol("3.14");
   print("Symbol inside main : $pi");
   print("Symbol outside main : $s\n"); //declare at starting of the file
-  
+
+  ///9.Null datatype
+  Null n = null;
+  print("Null Type : ${n.runtimeType} and value is : ${n}");
+  int? iNull = null;
+  print("int? Type : ${iNull.runtimeType} and value : ${iNull}");
+  double? dNull = null;
+  print("double? Type : ${dNull.runtimeType} and value : ${dNull}");
+  String? sNull = null;
+  print("Strinng? Type : ${sNull.runtimeType} and value : ${sNull}");
+  bool? bNull = null;
+  print("bool? Type : ${bNull.runtimeType} and value : ${bNull}");
+  List? lNull = null;
+  print("List? Type : ${lNull.runtimeType} and value : ${lNull}");
+  Set? ssNull = null;
+  print("Set? Type : ${ssNull.runtimeType} and value : ${ssNull}");
+  Map? mNull = null;
+  print("Map? Type : ${mNull.runtimeType} and value : ${mNull}");
+  var vNull = null;
+  print("Var Type : ${vNull.runtimeType} and value : ${vNull}");
+  dynamic dyNull = null;
+  print("dynamic Type : ${dyNull.runtimeType} and value : ${dyNull}\n");
+
   ///2.1Runes - to find unicode vales of string
   print("for 'A' : ${'A'.runes}");
   print("for 'a' : ${'a'.runes}\n");
