@@ -146,7 +146,7 @@ void main() {
   print("bMap.keys : ${bMap.keys}");
   print("bMap.values : ${bMap.values}");
 
-  //map without datatype
+  //Map without datatype
   Map anyMap = {
     1: 2,
     2.65: 6.36,
@@ -158,7 +158,7 @@ void main() {
   print("anyMap.keys : ${anyMap.keys}");
   print("anyMap.values : ${anyMap.values} \n");
 
-  /// var datatype - takes datatype automatically not need to define
+  ///Var datatype - takes datatype automatically not need to define
   var e = 100;
   print("e type = ${e.runtimeType} and value is $e.");
   var f = 100.5;
@@ -166,8 +166,9 @@ void main() {
   var g = "jay";
   print("g type = ${g.runtimeType} and value is $g.");
   var h = true;
-  print("h type = ${h.runtimeType} and value is $h.");
+  print("h type = ${h.runtimeType} and value is $h. \n");
 
-  
-
+  ///Runes - to find unicode vales of string
+  print("for 'A' : ${'A'.runes}");
+  print("for 'a' : ${'a'.runes}");
 }
