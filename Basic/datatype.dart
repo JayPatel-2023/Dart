@@ -79,7 +79,6 @@ void main() {
   print("List without specific datatype : $anyValue");
   print("anyValue [2] : ${anyValue[2]} \n");
 
-
   ///sets
   //int set
   Set<int> iSet = {1, 2, 5, 3, 6, 4};
@@ -97,7 +96,7 @@ void main() {
   print("sSet.first : ${sSet.first}");
 
   //bool set - removes the same value automatically
-  Set<bool> bSet = {true, false, true, false, false}; 
+  Set<bool> bSet = {true, false, true, false, false};
   print("Boolean set : $bSet");
   print("bSet.first : ${bSet.first}");
 
@@ -106,6 +105,60 @@ void main() {
   print("Set without specific datatype : $anyType");
   print("anyType [2] : ${anyType.elementAt(2)} \n");
 
+  ///Maps
+  //int map
+  Map<int, int> iMap = {
+    1: 2,
+    2: 3,
+  };
+  print("int map : $iMap");
+  print("iMap.entries :  ${iMap.entries}");
+  print("iMap.keys : ${iMap.keys}");
+  print("iMap.values : ${iMap.values}");
+
+  //double map
+  Map<double, double> dMap = {
+    1.0: 2.56,
+    2.0: 3.56,
+  };
+  print("Double map : $dMap");
+  print("dMap.entries :  ${dMap.entries}");
+  print("dMap.keys : ${dMap.keys}");
+  print("dMap.values : ${dMap.values}");
+
+  //String map
+  Map<String, String> sMap = {
+    'abc': 'xyz',
+    'ijk': 'pqr',
+  };
+  print("string map : $sMap");
+  print("sMap.entries :  ${sMap.entries}");
+  print("sMap.keys : ${sMap.keys}");
+  print("sMap.values : ${sMap.values}");
+
+  //bool map
+  Map<bool, bool> bMap = {
+    true: true,
+    false: false,
+  };
+  print("bool map : $bMap");
+  print("bMap.entries :  ${bMap.entries}");
+  print("bMap.keys : ${bMap.keys}");
+  print("bMap.values : ${bMap.values}");
+
+  //map without datatype
+  Map anyMap = {
+    1: 2,
+    2.65: 6.36,
+    'abc': 'xyz',
+    true: false,
+  };
+  print("anyMap map : $anyMap");
+  print("anyMap.entries :  ${anyMap.entries}");
+  print("anyMap.keys : ${anyMap.keys}");
+  print("anyMap.values : ${anyMap.values} \n");
+
+  /// var datatype - takes datatype automatically not need to define
   var e = 100;
   print("e type = ${e.runtimeType} and value is $e.");
   var f = 100.5;
@@ -114,4 +167,7 @@ void main() {
   print("g type = ${g.runtimeType} and value is $g.");
   var h = true;
   print("h type = ${h.runtimeType} and value is $h.");
+
+  
+
 }
