@@ -18,33 +18,33 @@ void main() {
   // """""" : for multiline statement
   String c = 'abcdefghij';
   print("c type = ${c.runtimeType} and value is $c.");
-  // Multi Line Using Single Quotes   
+  // Multi Line Using Single Quotes
   String multiLineText = '''
   This is Multi Line Text
   with 3 single quote
   I am also writing here.
   ''';
-    
-  // Multi Line Using Double Quotes   
+
+  // Multi Line Using Double Quotes
   String otherMultiLineText = """
   This is Multi Line Text
   with 3 double quote
   I am also writing here.
   """;
-    
-  // Printing Information   
+
+  // Printing Information
   print("Multiline text is $multiLineText");
   print("Other multiline text is $otherMultiLineText");
 
   ///special characters in string
-  // Using \n and \t   
+  // Using \n and \t
   print("I am from \nUS.");
   print("I am from \tUS.");
 
-  ///raw string 
+  ///raw string
   num prize = 10;
   String withoutRawString = "The value of prize is \t $prize"; // regular String
-  String withRawString =r"The value of prize is \t $prize"; // raw String
+  String withRawString = r"The value of prize is \t $prize"; // raw String
 
   print("Without Raw: $withoutRawString"); // regular result
   print("With Raw: $withRawString"); // with raw result
@@ -52,6 +52,37 @@ void main() {
   bool d = true;
   print("d type = ${d.runtimeType} and value is $d.");
   print("all var variable declartion !!!");
+
+  ///Lists
+  //int list
+  List<int> iList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  print("int list : $iList");
+  print("ilList[0] : ${iList[0]}");
+
+  //double list
+  List<double> dList = [1.67, 2.67];
+  print("double list : $dList");
+  print("dList[0] : ${dList[0]}");
+
+  //String list
+  List<String> sList = ['jay', 'miraj', 'rahul'];
+  print("String list : $sList");
+  print("sList[0] : ${sList[0]}");
+
+  //bool list
+  List<bool> bList = [true, false, true, false, false];
+  print("Boolean List : $bList");
+  print("bList[0] : ${bList[0]}");
+
+  //list without datatype
+  List anyValue = [1, 2.57, 'jay', true];
+  print("List without specific datatype : $anyValue");
+  for (int ip = 0; ip <= anyValue.length; ip++) {
+    print("anyValue [$ip] : ${anyValue[ip]} \n");
+  }
+  
+ 
+
   var e = 100;
   print("e type = ${e.runtimeType} and value is $e.");
   var f = 100.5;
@@ -60,5 +91,4 @@ void main() {
   print("g type = ${g.runtimeType} and value is $g.");
   var h = true;
   print("h type = ${h.runtimeType} and value is $h.");
-
 }
