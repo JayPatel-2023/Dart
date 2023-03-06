@@ -1,5 +1,7 @@
 void main() {
-  //Built in datatypes
+  ///Built in datatypes
+
+//Static datatype
   //1.Numbers(int,double,num(int + double))
   int a = 10; //integer values
   print("a type = ${a.runtimeType} and value is $a");
@@ -12,10 +14,7 @@ void main() {
   ab = 10.5;
   print("ab type = ${ab.runtimeType} and value is $ab");
 
-  // string declare with
-  // '' : for small words
-  // "" : for single line statement
-  // """""" : for multiline statement
+  //2.String
   String c = 'abcdefghij';
   print("c type = ${c.runtimeType} and value is $c.");
   // Multi Line Using Single Quotes
@@ -49,11 +48,12 @@ void main() {
   print("Without Raw: $withoutRawString"); // regular result
   print("With Raw: $withRawString"); // with raw result
 
+  //3.Boolean
   bool d = true;
   print("d type = ${d.runtimeType} and value is $d.");
   print("all var variable declartion !!!");
 
-  ///Lists
+  ///4.Lists
   //int list
   List<int> iList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   print("int list : $iList");
@@ -65,7 +65,7 @@ void main() {
   print("dList[0] : ${dList[0]}");
 
   //String list
-  List<String> sList = ['jay', 'miraj', 'rahul'];
+  List<String> sList = ['abc', 'ijk', 'xyz'];
   print("String list : $sList");
   print("sList[0] : ${sList[0]}");
 
@@ -75,11 +75,11 @@ void main() {
   print("bList[0] : ${bList[0]}");
 
   //list without datatype
-  List anyValue = [1, 2.57, 'jay', true];
+  List anyValue = [1, 2.57, 'abc', true];
   print("List without specific datatype : $anyValue");
   print("anyValue [2] : ${anyValue[2]} \n");
 
-  ///sets
+  ///5.sets
   //int set
   Set<int> iSet = {1, 2, 5, 3, 6, 4};
   print("int set : $iSet");
@@ -91,7 +91,7 @@ void main() {
   print("dSet.first : ${dSet.first}");
 
   //String set
-  Set<String> sSet = {'jay', 'miraj', 'rahul'};
+  Set<String> sSet = {'abc', 'ijk', 'xyz'};
   print("String set : $sSet");
   print("sSet.first : ${sSet.first}");
 
@@ -101,11 +101,11 @@ void main() {
   print("bSet.first : ${bSet.first}");
 
   //set without datatype
-  Set anyType = {1, 2.57, 'jay', true};
+  Set anyType = {1, 2.57, 'abc', true};
   print("Set without specific datatype : $anyType");
-  print("anyType [2] : ${anyType.elementAt(2)} \n");
+  print("anyType.elementAt(2) : ${anyType.elementAt(2)} \n");
 
-  ///Maps
+  ///6.Maps
   //int map
   Map<int, int> iMap = {
     1: 2,
@@ -158,17 +158,48 @@ void main() {
   print("anyMap.keys : ${anyMap.keys}");
   print("anyMap.values : ${anyMap.values} \n");
 
-  ///Var datatype - takes datatype automatically not need to define
+  ///7.Var datatype - takes datatype automatically not need to define
   var e = 100;
   print("e type = ${e.runtimeType} and value is $e.");
   var f = 100.5;
   print("f type = ${f.runtimeType} and value is $f.");
-  var g = "jay";
+  var g = "abc";
   print("g type = ${g.runtimeType} and value is $g.");
   var h = true;
   print("h type = ${h.runtimeType} and value is $h. \n");
 
-  ///Runes - to find unicode vales of string
+  ///2.1Runes - to find unicode vales of string
   print("for 'A' : ${'A'.runes}");
   print("for 'a' : ${'a'.runes}");
+
+  ///Dynamic datatype
+  //dynamic datatype
+  dynamic dy = 10;
+  print("Type : ${dy.runtimeType} and value : ${dy}");
+  dy = 10.658;
+  print("Type : ${dy.runtimeType} and value : ${dy}");
+  dy = "abcxyz";
+  print("Type : ${dy.runtimeType} and value : ${dy}");
+  dy = true;
+  print("Type : ${dy.runtimeType} and value : ${dy}\n");
+
+  List<dynamic> dy1 = [1, 2.57, 'abc', true];
+  print("Dynamic List  : $dy");
+  print("dy1 [2] : ${dy1[2]} \n");
+
+  Set<dynamic> dy2 = {1, 2.57, 'abc', true, true};
+  print("Dynamic Set  : $dy2");
+  print("dy2.elementAt(2) : ${dy2.elementAt(2)} \n");
+
+  Map<dynamic, dynamic> dy3 = {};
+  for (int ip = 0; ip < 5; ip++) {
+    dy3[ip] = {
+      '${ip}.isOdd ': ip.isOdd,
+      '${ip}.isEven': ip.isEven,
+    };
+  }
+  print("dynamic map : $dy3");
+  print("dy3.entries :  ${dy3.entries}\n");
+  print("dy3.keys : ${dy3.keys}\n");
+  print("dy3.values : ${dy3.values}\n");
 }
