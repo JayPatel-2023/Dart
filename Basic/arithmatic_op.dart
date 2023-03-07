@@ -8,6 +8,8 @@ void main() {
   print("div / : ${(i / j)}");
   print("reminder  % : ${(i % j)}");
   print("div then toInt ~/ : ${(i ~/ j)}");
+  print("unary minus -expr : ${-i}");
+
   //operations on arithmatic opertors result
   print("sum with sign = ${(i + j).sign}");
   print("sum with hashCode = ${(i + j).hashCode}");
@@ -19,6 +21,7 @@ void main() {
   print("sum with isNaN = ${(i + j).isNaN}");
   print("sum with isNegative = ${(i + j).isNegative}");
   print("sum with runtimeType = ${(i + j).runtimeType}");
+
   print(
       "next all the operations is accepts the other methos like hashcode which is given above!!!");
   print("sum with abs() = ${(-5).abs()}");
@@ -40,5 +43,4 @@ void main() {
   print("sum with toStringAsPrecision(1) = ${(i + j).toStringAsPrecision(1)}");
   print("sum with truncate() = ${(i + j).truncate()}");
   print("sum with truncateToDouble() = ${(i + j).truncateToDouble()}");
-
 }
