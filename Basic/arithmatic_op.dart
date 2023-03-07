@@ -22,6 +22,7 @@ void main() {
   print("sum with isNegative = ${(i + j).isNegative}");
   print("sum with runtimeType = ${(i + j).runtimeType}");
 
+  //properties on arithmatic operators
   print(
       "next all the operations is accepts the other methos like hashcode which is given above!!!");
   print("sum with abs() = ${(-5).abs()}");
