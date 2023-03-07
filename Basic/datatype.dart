@@ -183,7 +183,7 @@ void main() {
   ///9.Null datatype
   Null n = null;
   print("Null Type : ${n.runtimeType} and value is : ${n}");
-  int? iNull = null;
+  int? iNull = 10;
   print("int? Type : ${iNull.runtimeType} and value : ${iNull}");
   double? dNull = null;
   print("double? Type : ${dNull.runtimeType} and value : ${dNull}");
@@ -205,6 +205,11 @@ void main() {
   ///2.1Runes - to find unicode vales of string
   print("for 'A' : ${'A'.runes}");
   print("for 'a' : ${'a'.runes}\n");
+
+  ///2.2Grapheme clusters
+  print('\u{1F602}');
+  print('\u{2665}');
+  print('\u{1f600}');
 
   ///Dynamic datatype
   //dynamic datatype

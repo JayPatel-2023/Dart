@@ -1,7 +1,8 @@
 void main() {
   int p = 10; //+ve number
-  int n = -5; //-ve number
+  dynamic n = -5; //-ve number  use dynamic because for int negative not work
   int z = 0;
+  print(n);
   print("-----Properties of int class-----");
   print(
       "p.bitLength : ${p.bitLength}"); //Returns the minimum number of bits required to store this integer.
