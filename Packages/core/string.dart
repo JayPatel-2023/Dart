@@ -55,8 +55,8 @@ void main() {
   print("t3.indexOf('ipsum') : ${t3.indexOf('ipsum')}");
   print("t3.lastIndexOf('ipsum') : ${t3.lastIndexOf('ipsum')}");
   print("t1.matchAsPrefix(t2) : ${t1.matchAsPrefix(t2)}");
-  print("t2.padLeft(t2.length, '#') : ${t2.padLeft(t2.length*2, '#')}");
-  print("t2.padRight(t2.length, '#') : ${t2.padRight(t2.length*2, '#')}");
+  print("t2.padLeft(t2.length, '#') : ${t2.padLeft(t2.length * 2, '#')}");
+  print("t2.padRight(t2.length, '#') : ${t2.padRight(t2.length * 2, '#')}");
   print(
       "t3.replaceAll('ipsum', 'ipsum1') : ${t3.replaceAll('ipsum', 'ipsum1')}");
   print(
