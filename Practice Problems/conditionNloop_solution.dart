@@ -125,7 +125,7 @@ void Task9() {
     if (i == 41) {
       continue;
     }
-    print("$i\n");
+    print("$i");
     i++;
   }
 }
