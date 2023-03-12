@@ -2,24 +2,24 @@ import 'dart:io';
 
 void main(List<String> args) {
   int i;
-  bool b = true;
-   for (i = 0; b; i++) {
-    if (i == 5) {
-      b = false;
-    }
-    print(i);
-    sleep(new Duration(seconds: 10));
-  }
-  print("outside the loop : $i");
 
-  b = true;
-  i = 0;
-  while (b) {
+  for (i = 0; i < 10; i++) {
+    print(i);
+  }
+
+  for (i = 0; i < 10; i++) {
     if (i == 5) {
-      b = false;
+      print("Break Loop!!!");
+      break;
     }
     print(i);
-    i++;
-    //sleep(new Duration(seconds: 60));
+  }
+
+  for (i = 0; i < 10; i++) {
+    if (i == 5) {
+      print("Continue Loop!!!");
+      continue;
+    }
+    print(i);
   }
 }

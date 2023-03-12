@@ -12,6 +12,7 @@ void main() {
   i = 0;
   while (i < 10) {
     if (i == 5) {
+      print("Break Loop!!!");
       break;
     }
     print(i);
@@ -22,11 +23,10 @@ void main() {
   i = 0;
   while (i <= 10) {
     if (i == 4) {
+      print("Continue Loop!!!");
       continue;
     }
     print("$i");
     i++;
   }
-
-  
 }
