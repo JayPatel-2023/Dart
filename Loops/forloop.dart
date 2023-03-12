@@ -23,14 +23,14 @@ void main(List<String> args) {
     print(i);
   }
 
-  List<String> footballplayers=['Ronaldo','Messi','Neymar','Hazard'];
-  for(String player in footballplayers){
+  List<String> footballplayers = ['Ronaldo', 'Messi', 'Neymar', 'Hazard'];
+  for (String player in footballplayers) {
     print(player);
   }
 
   var message = StringBuffer('Dart is fun');
   for (var i = 0; i < 5; i++) {
-  message.write('!');
+    message.write('!');
   }
   print(message);
 }
