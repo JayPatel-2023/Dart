@@ -26,5 +26,10 @@ void main() {
   }
 
   callbacks.forEach((num) => print(num));
-  
+
+  i = 0;
+  do {
+    print(i);
+    i++;
+  } while (i < double.infinity);
 }
