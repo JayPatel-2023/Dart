@@ -27,4 +27,10 @@ void main(List<String> args) {
   for(String player in footballplayers){
     print(player);
   }
+
+  var message = StringBuffer('Dart is fun');
+  for (var i = 0; i < 5; i++) {
+  message.write('!');
+  }
+  print(message);
 }
