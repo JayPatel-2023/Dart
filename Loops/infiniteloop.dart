@@ -24,5 +24,7 @@ void main() {
   for (int c in callbacks) {
     print(c);
   }
+
+  callbacks.forEach((num) => print(num));
   
 }
